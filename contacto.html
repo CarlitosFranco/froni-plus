@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - FRONI+</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+    <!-- Header y navegación -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <div style="background-color: white; padding: 8px; border-radius: 8px;">
+                            <i class="fas fa-table-tennis-paddle-ball" style="color: #1a3a8f; font-size: 32px;"></i>
+                        </div>
+                        <h1>FRONI<span>+</span></h1>
+                    </a>
+                </div>
+                
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    
+                    <nav>
+                        <ul id="navMenu">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="contacto.html" class="active">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carrito de compras sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart" id="emptyCart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Tu carrito está vacío</p>
+            </div>
+        </div>
+        <div class="cart-total" id="cartTotal" style="display: none;">
+            <div class="total-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">S/ 0.00</span>
+            </div>
+            <div class="total-row">
+                <span>Envío:</span>
+                <span id="shipping">S/ 15.00</span>
+            </div>
+            <div class="total-row">
+                <span>Total:</span>
+                <span class="total-price" id="totalPrice">S/ 0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Finalizar Compra</button>
+        </div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Banner contacto -->
+    <section class="hero" style="background: linear-gradient(rgba(26, 58, 143, 0.9), rgba(45, 92, 194, 0.9)), url('https://images.unsplash.com/photo-1521790797524-b2497295b8a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <p>Estamos aquí para ayudarte. Contáctanos para consultas, pedidos o cualquier información.</p>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 50px;">
+                <!-- Información de contacto -->
+                <div class="contact-info">
+                    <h2 style="font-family: 'Poppins', sans-serif; font-size: 32px; color: #1a3a8f; margin-bottom: 30px;">Información de Contacto</h2>
+                    
+                    <div class="contact-details" style="margin-bottom: 40px;">
+                        <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+                            <div style="font-size: 24px; color: #1a3a8f; margin-right: 15px; width: 30px;">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-family: 'Poppins', sans-serif; color: #1a3a8f; margin-bottom: 5px;">Dirección</h3>
+                                <p>Lima, Perú</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+                            <div style="font-size: 24px; color: #1a3a8f; margin-right: 15px; width: 30px;">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-family: 'Poppins', sans-serif; color: #1a3a8f; margin-bottom: 5px;">Teléfono / WhatsApp</h3>
+                                <p>+51 999 888 777</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+                            <div style="font-size: 24px; color: #1a3a8f; margin-right: 15px; width: 30px;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-family: 'Poppins', sans-serif; color: #1a3a8f; margin-bottom: 5px;">Correo Electrónico</h3>
+                                <p>arenasnelson@hotmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h3 style="font-family: 'Poppins', sans-serif; color: #1a3a8f; margin-bottom: 20px;">Síguenos en Redes Sociales</h3>
+                        <div class="social-links" style="justify-content: flex-start;">
+                            <a href="https://facebook.com/froniplusofficial" class="social-icon facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://wa.me/51999888777" class="social-icon whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://instagram.com/frioniplus" class="social-icon instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://tiktok.com/@frioniplus" class="social-icon tiktok" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulario de contacto -->
+                <div class="contact-form">
+                    <h2 style="font-family: 'Poppins', sans-serif; font-size: 32px; color: #1a3a8f; margin-bottom: 30px;">Envíanos un Mensaje</h2>
+                    
+                    <form id="contactForm" style="background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08);">
+                        <div style="margin-bottom: 20px;">
+                            <label for="name" style="display: block; margin-bottom: 8px; font-weight: 500; color: #333;">Nombre completo *</label>
+                            <input type="text" id="name" name="name" required style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500; color: #333;">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label for="phone" style="display: block; margin-bottom: 8px; font-weight: 500; color: #333;">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label for="subject" style="display: block; margin-bottom: 8px; font-weight: 500; color: #333;">Asunto *</label>
+                            <select id="subject" name="subject" required style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px;">
+                                <option value="">Selecciona un asunto</option>
+                                <option value="consulta">Consulta sobre productos</option>
+                                <option value="pedido">Realizar un pedido</option>
+                                <option value="soporte">Soporte técnico</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <label for="message" style="display: block; margin-bottom: 8px; font-weight: 500; color: #333;">Mensaje *</label>
+                            <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 6px; font-size: 16px; resize: vertical;"></textarea>
+                        </div>
+                        
+                        <button type="submit" style="background-color: #1a3a8f; color: white; border: none; padding: 15px 30px; font-size: 18px; font-weight: 600; border-radius: 6px; cursor: pointer; transition: background-color 0.3s; width: 100%;">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>FRONI+</h4>
+                    <p>Especialistas en artículos deportivos de frontón. Venta de raquetas, pelotas y accesorios de calidad.</p>
+                    <p>Lima, Perú</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> arenasnelson@hotmail.com</li>
+                        <li><i class="fas fa-phone"></i> +51 999 888 777</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Lima, Perú</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com/froniplusofficial" class="social-icon facebook" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/51999888777" class="social-icon whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/frioniplus" class="social-icon instagram" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@frioniplus" class="social-icon tiktok" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2025 FRONI+. Todos los derechos reservados. | Proyecto desarrollado por el Instituto San Agustín (ISAT)</p>
+                <p>Gestores del Proyecto: Nestor Alonzo Gomez Velarde, Luz Karina Cruz Mejias, Renato Sebastian Moje Galvan, Angel Rufino Cervantes Izquierdo, Frank Miguel Paredes Zea, Carlos Alberto Franco Quijandria, Monica Gomez Ortega</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/carrito.js"></script>
+    <script>
+        // Formulario de contacto
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Aquí normalmente enviaríamos el formulario a un servidor
+            // Para este prototipo, solo mostraremos un mensaje de confirmación
+            
+            alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
