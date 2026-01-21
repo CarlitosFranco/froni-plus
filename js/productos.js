@@ -5,7 +5,7 @@ const productos = [
         name: 'Raqueta Profesional Frontón',
         price: 249.90,
         category: 'raquetas',
-        img: 'https://images.unsplash.com/photo-1622279457486-62dcc4a4312e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+        img: 'assets/raqueta_profesional.jpg',
         description: 'Raqueta profesional de frontón, modelo avanzado con mango ergonómico y superficie de golpe de alta resistencia. Ideal para jugadores de nivel intermedio a avanzado.'
     },
     {
@@ -13,7 +13,7 @@ const productos = [
         name: 'Pelotas Competitivas',
         price: 39.90,
         category: 'pelotas',
-        img: 'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1107&q=80',
+        img: 'assets/pelota_competitiva.jpg',
         description: 'Pack de 3 pelotas oficiales para frontón. Alta durabilidad y rebote controlado para partidas profesionales. Material de primera calidad.'
     },
     {
@@ -21,7 +21,7 @@ const productos = [
         name: 'Kit Completo Frontón',
         price: 89.90,
         category: 'accesorios',
-        img: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+        img: 'assets/kit.png',
         description: 'Kit incluye: 1 protector de raqueta, 2 overgrips, 1 cordón de repuesto y bolsa deportiva. Todo lo necesario para el cuidado de tu equipo.'
     },
     {
@@ -29,7 +29,7 @@ const productos = [
         name: 'Raqueta Avanzada Carbon',
         price: 329.90,
         category: 'raquetas',
-        img: 'https://images.unsplash.com/photo-1554387662-9b8c5c5c9b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+        img: 'assets/raqueta_carbono.jpg',
         description: 'Fabricada en fibra de carbono, mayor potencia y control. Ideal para jugadores de nivel intermedio a avanzado. Peso equilibrado para mejor manejo.'
     },
     {
@@ -37,7 +37,7 @@ const productos = [
         name: 'Raqueta Iniciación Frontón',
         price: 179.90,
         category: 'raquetas',
-        img: 'https://images.unsplash.com/photo-1595435934249-5d33b7f92c62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+        img: 'assets/raqueta_iniciacion.jpg',
         description: 'Perfecta para principiantes. Diseño ligero y fácil manejo. Incluye funda protectora. Ideal para aprender y desarrollar técnica.'
     },
     {
@@ -45,7 +45,7 @@ const productos = [
         name: 'Pack Pelotas Premium',
         price: 59.90,
         category: 'pelotas',
-        img: 'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1107&q=70',
+        img: 'assets/pelota_premium.png',
         description: 'Pack de 6 pelotas de alta durabilidad. Rebote consistente y mayor resistencia al desgaste. Para entrenamiento intensivo.'
     },
     {
@@ -53,7 +53,7 @@ const productos = [
         name: 'Overgrips Profesionales',
         price: 24.90,
         category: 'accesorios',
-        img: 'https://images.unsplash.com/photo-1571019614246-7e1c6298d0c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+        img: 'assets/overgrips.jpg',
         description: 'Set de 5 overgrips absorbentes. Mejor agarre y comodidad. Material transpirable que absorbe la humedad.'
     },
     {
@@ -61,7 +61,7 @@ const productos = [
         name: 'Bolsa Deportiva Frontón',
         price: 79.90,
         category: 'accesorios',
-        img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+        img: 'assets/bolsa.png',
         description: 'Bolsa espaciosa con compartimentos para raquetas, pelotas y accesorios. Material resistente al agua y cómodas correas.'
     }
 ];
