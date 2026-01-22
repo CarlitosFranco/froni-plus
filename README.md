@@ -13,6 +13,7 @@ Proyecto web desarrollado para el emprendimiento FRONI+, especializado en la ven
 - **Páginas separadas** para mejor organización
 
 ## 📁 Estructura del Proyecto
+
 froni-plus/
 ├── index.html # Página principal
 ├── productos.html # Catálogo de productos
@@ -80,7 +81,7 @@ text
 Desarrollar una página web institucional para FRONI+ que centralice la información del negocio, muestre los productos principales y permita el contacto con clientes mediante enlaces directos a redes sociales.
 
 ## 🌐 Demo
-[Enlace a GitHub Pages si se configura]
+[(https://carlitosfranco.github.io/froni-plus/)]
 
 ## 📄 Licencia
 Proyecto académico desarrollado para el Instituto San Agustín (ISAT).

@@ -226,7 +226,7 @@ function checkout() {
     message += "Por favor, contáctenme para coordinar el pago y envío.";
     
     // Redirigir a WhatsApp
-    window.open(`https://wa.me/51999888777?text=${message}`, '_blank');
+    window.open(`https://wa.me/51920718308?text=${message}`, '_blank');
     
     // Cerrar carrito
     closeCart();
